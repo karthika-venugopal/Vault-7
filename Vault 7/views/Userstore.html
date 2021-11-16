@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" ng-model="formData.email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" class="form-control" ng-model="formData.password">
+        <br>
+        <label for="type">Type of credentials</label>
+        <input type="text" class="form-control" ng-model="formData.type">
+        <br>
+    </div>
+<a ng-click="savecred(formData)" class="btn btn-block btn-info">Store credential</a>
+<a ng-click="goBack()" class="btn btn-block btn-info">Go to home page</a>
+<a ng-click="logout()" class="btn btn-block btn-info">Logout</a>
+
+<br>
+</body>
+</html>
